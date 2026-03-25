@@ -5,8 +5,8 @@ console.log('Node.js версия:', process.version);
 
 // НАСТРОЙКИ — ИЗМЕНИТЕ ПОД СЕБЯ!
 const config = {
-    host: 'lekpixel.aternos.me',  // ваш сервер
-    port: 25565,                   // проверьте порт в Aternos!
+    host: 'minecart-1Dee.aternos.me',  // ваш сервер
+    port: 13143,                   // проверьте порт в Aternos!
     username: 'TestBot',
     auth: 'offline'
 };
