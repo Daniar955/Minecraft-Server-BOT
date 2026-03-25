@@ -18,6 +18,16 @@ const bot = mineflayer.createBot(config);
 bot.once('spawn', () => {
     console.log('✅ Бот подключился!');
     
+    // Ждем 3 секунды и вводим пароль
+    setTimeout(() => {
+        bot.chat('/login ВашПароль');  // Вместо ВашПароль — реальный пароль
+        // Если бот еще не зарегистрирован, используйте:
+        // bot.chat('/register Пароль Пароль');
+    }, 3000);
+    
+    // Остальной код...
+});
+    
     // Простое движение, чтобы не выкинуло
     setInterval(() => {
         bot.setControlState('forward', true);
