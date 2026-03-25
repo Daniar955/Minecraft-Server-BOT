@@ -1,4 +1,16 @@
-const express = require('express');
+// Перехват необработанных ошибок
+process.on('uncaughtException', (error) => {
+    console.error('❌ НЕОБРАБОТАННАЯ ОШИБКА:', error);
+    console.error('Стек:', error.stack);
+    // Не завершаем процесс сразу, чтобы ошибка точно отобразилась
+    setTimeout(() => process.exit(1), 1000);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('❌ НЕОБРАБОТАННОЕ ОТКЛОНЕНИЕ ПРОМИСА:', reason);
+});
+
+ const express = require('express');
 const logger = require('./logger');
 
 class HealthServer {
