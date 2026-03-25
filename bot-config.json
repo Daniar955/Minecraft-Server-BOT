@@ -1,10 +1,10 @@
 {
   "server": {
-    "host": "lekpixel.aternos.me",
-    "port": 52285,
+    "host": "minecart-1Dee.aternos.me",
+    "port": 13143,
     "username": "UptimeMonitor",
     "password": "EnterLoginPass",
-    "version": "",
+    "version": "1.16.5",
     "auth": "offline"
   },
   "loginSystem": {
@@ -37,12 +37,12 @@
       "OnlineCheck"
     ],
     "combatMode": {
-      "enabled": true,
-      "attackPlayers": true,
-      "attackMobs": true,
+      "enabled": false,
+      "attackPlayers": false,
+      "attackMobs": false,
       "attackRange": 4,
-      "combatMovement": true,
-      "strafingEnabled": true
+      "combatMovement": false,
+      "strafingEnabled": false
     }
   },
   "reconnection": {
